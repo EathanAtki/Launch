@@ -5,7 +5,7 @@ VERSION="v1.0.0"
 # title           setup-new-computer.sh
 #===============================================================================
 #   A shell script to help with the quick setup and installation of tools and 
-#   applications for new developers at Vendasta.
+#   applications for new developers.
 # 
 #   Quick Instructions:
 #
@@ -21,7 +21,7 @@ VERSION="v1.0.0"
 #      Use the email and name you use for Github
 #
 #   5. Follow the Post Installation Instructions in the Readme:
-README="https://github.com/vendasta/setup-new-computer-script#post-installation-instructions"
+README="https://github.com/EathanAtki/Launch/#post-installation-instructions"
 #  
 #===============================================================================
 
@@ -222,7 +222,8 @@ printHeading "Installing Homebrew"
 printDivider
     if test ! $(which brew); then
         echo "Installing homebrew..."
-        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     else
         echo "✔ Homebrew already installed. Skipping"
     fi
