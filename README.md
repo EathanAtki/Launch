@@ -11,7 +11,7 @@ The script will create/modify `.bash_profile` and `.zprofile` with path and auto
 
 Paste the command below in a Mac OS Terminal:
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ECOSurv/new-computer-setup/main/setup-new-computer.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/EathanAtki/Launch/main/setup-new-computer.sh)"
 ```
 
 ## Manual Install Instructions
